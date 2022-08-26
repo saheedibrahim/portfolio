@@ -11,3 +11,8 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.tcss{
+    display: inline;
+    width: 15px;
+    height: 15px;
+}
