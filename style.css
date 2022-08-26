@@ -11,6 +11,12 @@ body{
     display: flex;
     justify-content: space-between;
 }
+#home, #about, #skills{
+    display: flex;
+}
+.works{
+    flex: 1;
+}
 .tcss{
     display: inline;
     width: 15px;
