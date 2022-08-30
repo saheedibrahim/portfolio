@@ -73,6 +73,9 @@ main{
     width: 15px;
     height: 15px;
 }
+#projects{
+    margin-bottom: 5rem;
+}
 footer{
     background-color: #0D1730;
     position: fixed;
