@@ -5,14 +5,31 @@
     text-decoration: none;
 }
 body{
-    padding: 20px;
+    /* padding: 20px; */
 }
 .head{
     display: flex;
     justify-content: space-between;
+    padding: 20px;
+    box-shadow: 2px 2px gray;
+    margin-bottom: 2rem;
+}
+.links a{
+    padding: 8px;
+    font-weight: bold;
+    font-size: large;
+}
+.links a:hover{
+    border-bottom: 5px solid green;
+}
+main{
+    padding: 0 20px 0 20px;
 }
 #home, #about, #skills{
     display: flex;
+}
+#home img, #about img, #skills img{
+    border-radius: 20px;
 }
 .img{
     width: 50%;
@@ -23,8 +40,33 @@ body{
 .comment{
     width: 50%;
 }
+.comment h2{
+    text-align: center;
+}
+.skills h3{
+    margin: 2rem;
+    text-align: center;
+}
+.comment span{
+    padding-left: 10px;
+}
+.skills p{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 5px gray;
+}
 .works{
+    display: flex;
+    gap: 2rem;
+}
+.works div{
+    width: 25%;
     flex: 1;
+}
+.works div img{
+    width: 100%;
 }
 .tcss{
     display: inline;
