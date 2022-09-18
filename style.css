@@ -5,24 +5,76 @@
     text-decoration: none;
 }
 
-body {
-    /* padding: 20px; */
-}
-
 .head {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px 20px;
     box-shadow: 2px 2px gray;
     margin-bottom: 2rem;
 }
-
+.links{
+    position: relative;
+}
 .links a {
     padding: 8px;
     font-weight: bold;
     font-size: large;
 }
-
+.hamburger{
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background-color: #000000;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+    z-index: 3;
+}
+.hamburger::before, .hamburger::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background-color: #000000;
+    border-radius: 10px;
+    transition: 0.3s;
+    z-index: 1;
+}
+.hamburger::before{
+    top: -10px;
+    width: 20px;
+}
+.hamburger::after{
+    top: 10px;
+    width: 25px;
+}
+.links input:checked ~ .hamburger::before{
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+.links input:checked ~ .hamburger::after{
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+.links input:checked ~ .hamburger{
+    background-color: transparent;
+}
+.links input:checked ~ .menu{
+    right: 0;
+}
+#toggle-menu{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+.hamburger, #toggle-menu{
+    display: none;
+}
 .links a:hover {
     border-bottom: 5px solid green;
 }
@@ -115,7 +167,26 @@ footer .links i {
     color: #ffffff;
 }
 
-@media(max-width: 525px) {
+@media(max-width: 525px) {  
+.hamburger, #toggle-menu{
+    display: block;
+}
+.menu{
+    position: fixed;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    position: fixed;
+    padding-top: 30px;
+    top: 0;
+    background-color: #fbc02d;
+    right: -300px;
+    width: 300px;
+    height: 200px;
+}
+.menu a{
+    color: #ffffff;
+}
 
     #home,
     #about,
