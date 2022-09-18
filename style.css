@@ -1,91 +1,133 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-body{
+
+body {
     /* padding: 20px; */
 }
-.head{
+
+.head {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     box-shadow: 2px 2px gray;
     margin-bottom: 2rem;
 }
-.links a{
+
+.links a {
     padding: 8px;
     font-weight: bold;
     font-size: large;
 }
-.links a:hover{
+
+.links a:hover {
     border-bottom: 5px solid green;
 }
-main{
+
+main {
     padding: 0 20px 0 20px;
 }
-#home, #about, #skills{
+
+#home,
+#about,
+#skills,
+.works {
     display: flex;
 }
-#home img, #about img, #skills img{
+
+#home img,
+#about img,
+#skills img {
     border-radius: 20px;
 }
-.img{
+
+#about .comment{
+    padding: 10px;
+}
+.img, .comment {
     width: 50%;
 }
-.img img{
+
+.img img {
     width: 100%;
 }
-.comment{
-    width: 50%;
-}
-.comment h2{
+
+.comment h2 {
     text-align: center;
 }
-.skills h3{
+
+.skills h3 {
     margin: 2rem;
     text-align: center;
 }
-.comment span{
+
+.comment span {
     padding-left: 10px;
 }
-.skills p{
+
+.skills p {
     font-size: 15px;
     font-weight: 700;
     padding: 20px;
     margin-bottom: 2rem;
     box-shadow: 2px 2px 5px gray;
 }
-.works{
-    display: flex;
+
+.works {
     gap: 2rem;
 }
-.works div{
+
+.works div {
     width: 25%;
     flex: 1;
 }
-.works div img{
+
+.works div img {
     width: 100%;
 }
-.tcss{
+
+.tcss {
     display: inline;
     width: 15px;
     height: 15px;
 }
-#projects{
+
+#projects {
     margin-bottom: 5rem;
 }
-footer{
+
+footer {
     background-color: #0D1730;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-footer .links{
+
+footer .links {
     display: flex;
     padding: 2rem;
 }
-footer .links i{
+
+footer .links i {
     color: #ffffff;
+}
+
+@media(max-width: 525px) {
+
+    #home,
+    #about,
+    #skills {
+        display: block;
+    }
+    .img, .comment {
+        width: 90%;
+        margin: auto;
+    }
+    #about{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
