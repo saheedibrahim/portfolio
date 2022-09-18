@@ -8,12 +8,13 @@
 .head {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 0 20px 10px ;
     box-shadow: 2px 2px gray;
     margin-bottom: 2rem;
 }
 .links{
     position: relative;
+    padding-top: 10px;
 }
 .links a {
     padding: 8px;
@@ -24,6 +25,7 @@
     position: relative;
     width: 30px;
     height: 4px;
+    margin-top: 15px;
     background-color: #000000;
     cursor: pointer;
     border-radius: 10px;
@@ -70,6 +72,7 @@
     height: 100%;
     cursor: pointer;
     z-index: 2;
+    /* padding: 10px; */
     opacity: 0;
 }
 .hamburger, #toggle-menu{
