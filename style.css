@@ -174,21 +174,23 @@ footer .links i {
 .hamburger, #toggle-menu{
     display: block;
 }
-.menu{
+.head h1{
+    display: none;
+}
+/* .menu{
     position: fixed;
     display: flex;
     justify-content: start;
     flex-direction: column;
-    position: fixed;
     padding-top: 30px;
     top: 0;
     background-color: #fbc02d;
     right: -300px;
     width: 300px;
     height: 200px;
-}
+} */
 .menu a{
-    color: #ffffff;
+    color: #000000;
 }
 
     #home,
