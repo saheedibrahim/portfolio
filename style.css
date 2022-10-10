@@ -133,15 +133,12 @@ main {
 
 .works {
     gap: 2rem;
-}
-
-.works div {
-    width: 25%;
     flex: 1;
 }
 
 .works div img {
     width: 100%;
+    height: 200px;
 }
 
 .tcss {
@@ -171,7 +168,7 @@ footer .links i {
 }
 
 @media(max-width: 525px) {  
-.hamburger, #toggle-menu{
+.hamburger, #toggle-menu, .works{
     display: block;
 }
 .head h1{
